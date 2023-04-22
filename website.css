@@ -1,0 +1,226 @@
+/* Import the font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+#main {
+  background-image: url('arcade-unsplash.jpg');
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/*registration form css*/
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+}
+
+/*navbar css*/
+
+.navbar {
+  background-color: blue;
+  font-family: Verdana, sans-serif;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar img {
+  height: 30px;
+  width: 30px;
+}
+
+.navbar-link {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-link-right {
+  padding: 0px;
+}
+
+.navbar-avatar {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 2.5%;
+  right: 1.5%;
+  padding: 10px;
+  margin-left: auto;
+  border-radius: 50%;
+}
+
+.navbar-username {
+  color: white;
+  font-weight: bold;
+  margin-right: 2.5%;
+  font-size: 12px;
+}
+
+/*photo reel for avatar picking*/
+
+.photo-reel {
+  display: flex;
+  overflow-x: scroll;
+  text-align: center;
+}
+
+.photo-container {
+  margin-right: 10px;
+  outline: none;
+  padding: 10px;
+}
+
+.photo-container:last-child {
+  margin-right: 0;
+  outline: none;
+}
+
+.photo-container.selected img {
+  outline: 2px solid blue;
+}
+
+
+.photo-container img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+username-registration {
+  padding: 10px;
+  text-align: center;
+}
+
+/* box for background */
+
+
+.box {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.pixelfont {
+  font-family: 'Press Start 2P', sans-serif;
+  padding: 10px;
+}
+
+.registrationbox {
+  background-color: #0EE27C;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  width: 50%;
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* game css */
+
+#game-board {
+  background-color: #ccc;
+  box-shadow: 5px 5px 5px #555;
+  height: 600px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  display: inline-block;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card.flipped .front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.card.flipped .back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.card .front,
+.card .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease-out;
+}
+
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card .front img,
+.card .back img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.centre-button {
+  padding: 10px;
+  text-align: center;
+}
+
+.card.unmatched .front {
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+
+.card.unmatched .back {
+  transform: rotateY(180deg);
+  opacity: 0;
+}
+
+/* leaderboard css */
+
+table {
+  border-spacing: 2px;
+  margin: 10px auto;
+  box-shadow: 5px 5px 5px grey;
+  background-color: #f2f2f2;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: center;
+}
+
+th {
+  background-color: blue;
+  color: white;
+}
