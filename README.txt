@@ -1,6 +1,5 @@
 Student Number: 720027904
 Link to VM: http://ml-lab-4d78f073-aa49-4f0e-bce2-31e5254052c7.ukwest.cloudapp.azure.com:56076/index.php
-SSH link: 
 
 Features:
 
