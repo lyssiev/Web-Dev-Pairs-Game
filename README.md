@@ -1,10 +1,10 @@
-#Pairs Game
+# Pairs Game
 ECM1417 Module - Web development
 Grade: 79%, First
 
 _This was a project I completed for my web development module in the first year of my course at Uni of Exeter. We were tasked with creating a website where users could play a 'pair matching' game with all of the features listed below. In this project I developed my HTML, CSS, PHP and Javascript skills, as well as working with a virtual machine using Microsoft Azure._
 
-##Features:
+## Features:
 Landing page: index.php (navbar.php, website.css)
 - if registered, 'click here to play' button appears
 - if not, hyperlink to register page
